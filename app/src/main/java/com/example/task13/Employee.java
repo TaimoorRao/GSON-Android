@@ -2,21 +2,30 @@ package com.example.task13;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class Employee {
-    
+
     @SerializedName("first_name")
     private String mFirstName;
+
     @SerializedName("age")
     private int mAge;
+
     @SerializedName("mail")
     private String mMail;
+
     @SerializedName("address")
     private Address mAddress;
 
-    public Employee(String firstName, int age, String mail, Address address) {
-        mFirstName = firstName;
-        mAge = age;
-        mMail = mail;
-        mAddress = address;
+    @SerializedName("family")
+    private List<FamilyMember> mFamily;
+
+    public Employee(String firstName, int age, String mail, Address address, List<FamilyMember> family) {
+        this.mFirstName = firstName;
+        this.mAge = age;
+        this.mMail = mail;
+        this.mAddress = address;
+        this.mFamily = family;
     }
 }

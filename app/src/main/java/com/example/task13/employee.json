@@ -4,6 +4,16 @@
     "country": "Germany"
   },
   "age": 30,
+  "family": [
+    {
+      "age": 30,
+      "role": "Wife"
+    },
+    {
+      "age": 5,
+      "role": "Daughter"
+    }
+  ],
   "first_name": "John",
   "mail": "john@gmail.com"
 }
