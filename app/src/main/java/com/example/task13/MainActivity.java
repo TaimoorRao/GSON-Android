@@ -14,11 +14,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Gson gson = new Gson();
+
         /*
         Employee employee = new Employee("John", 30, "john@gmail.com");
         String json = gson.toJson(employee);
         */
+        /*
         String json = "{\"first_name\":\"John\",\"age\":30,\"mail\":\"john@gmail.com\"}";
+        Employee employee = gson.fromJson(json, Employee.class);
+        */
+
+        /*
+        Address address = new Address("Germany", "Berlin");
+        Employee employee = new Employee("John", 30, "john@gmail.com", address);
+        String json = gson.toJson(employee);
+        */
+        String json = "{\"address\":{\"city\":\"Berlin\",\"country\":\"Germany\"},\"age\":30,\"first_name\":\"John\",\"mail\":\"john@gmail.com\"}";
         Employee employee = gson.fromJson(json, Employee.class);
 
     }
