@@ -1,19 +1,19 @@
 {
   "address": {
-    "city": "Berlin",
-    "country": "Germany"
+    "city": "Karachi",
+    "country": "Pakistan"
   },
-  "age": 30,
+  "age": 20,
   "family": [
     {
-      "age": 30,
+      "age": 19,
       "role": "Wife"
     },
     {
-      "age": 5,
+      "age": 1,
       "role": "Daughter"
     }
   ],
-  "first_name": "John",
-  "mail": "john@gmail.com"
+  "first_name": "Asad",
+  "mail": "asad@gmail.com"
 }
